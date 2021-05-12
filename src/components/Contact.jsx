@@ -1,13 +1,5 @@
 import logo from "../logo/logo.png";
-//import "./bootstrap.css";
-//import "./coctact_css/bootstrap.css";
-// import "./coctact_css/bootstrap.min.css";
-// import "./coctact_css/bootstrappage.css";
-// import "./coctact_css/bootstrap-responsive.css";
-// import "./coctact_css/bootstrap-responsive.min.css";
-// import "./coctact_css/flexslider.css";
-// import "./coctact_css/main.css";
-// import "./coctact_css/style.css";
+
 const Contact = () => {
   return (
     <>

@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
+// import { useState} from "react";
 import { useSelector } from "react-redux";
 import CartItem from "./CartItem";
 import shortid from "shortid";
 
 const Cart = (props) => {
-  const [checked, setChecked] = useState(true);
+  
 
   const handleChecked = (e) => {
     if (e.target.checked) {
@@ -14,7 +14,7 @@ const Cart = (props) => {
     }
   };
   const data = useSelector((state) => state.reducer);
-  console.log("Cart Total Price", parseFloat(data.totalprice).toFixed(2));
+  //console.log("Cart Total Price", parseFloat(data.totalprice).toFixed(2));
 
   //////////////Craeting Cart Item List///////////////////////////
   let ItemsSelected = props.data.cardData.length ? (

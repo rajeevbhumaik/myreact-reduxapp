@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { DATA_URL } from "../service/constants";
+import { useEffect } from "react";
+// import { DATA_URL } from "../service/constants";
 import Items from "./Items";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchAllData } from "../service/actions/action";
@@ -55,17 +55,9 @@ const Shop = (props) => {
       </div>
     );
   } else {
-    // if (items.length > 0) {
-    //   return items.map((item) => {
-    //     <div>Hello</div>;
-    //items.push( itemcount: 1 );
-    // items.forEach(function (element) {
-    //   element.itemcount = 1;
-    // });
-    console.log("Loaded items", data.initialData);
-    //   });
-    // }
-
+    
+    //console.log("Loaded items", data.initialData);
+    
     return (
       <div className="Item-list">
         {data.initialData.map((item, index) => {
@@ -73,12 +65,7 @@ const Shop = (props) => {
             <Items
               key={index}
               item={item}
-              // index={index}
-              // id={item.id}
-              // itemimg={item.image}
-              // title={item.title}
-              // price={item.price}
-              // description={item.description}
+              
               addToCartHandler={props.addToCartHandler}
               removeFromCartHandler={props.removeFromCartHandler}
             ></Items>

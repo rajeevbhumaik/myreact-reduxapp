@@ -23,7 +23,7 @@ const reducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_TO_CART:
       if (state.cardData.length > 0) {
-        console.log("AllData-2", state.AllData);
+        // console.log("AllData-2", state.AllData);
 
         let existed_item = state.cardData.find((item) => item.id === action.id);
         if (existed_item) {

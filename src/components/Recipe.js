@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import { useSelector } from "react-redux";
 
 const Recipe = (props) => {
@@ -7,7 +7,7 @@ const Recipe = (props) => {
   //     if (refs.shipping.checked) props.substractShipping();
   //   }, []);
   const data = useSelector((state) => state.reducer);
-  console.log("Recipe", parseFloat(data.totalprice).toFixed(2));
+  //console.log("Recipe", parseFloat(data.totalprice).toFixed(2));
 
   const handleChecked = (e) => {
     if (e.target.checked) {

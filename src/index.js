@@ -9,13 +9,14 @@ import { createStore, compose } from "redux";
 import rootReducer from "./service/reducers/index";
 import { BrowserRouter as Router } from "react-router-dom";
 
-const store = createStore(
-  rootReducer,
-  compose(
-    applyMiddleware(reduxThunk),
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-  )
-);
+// const store = createStore(
+//   rootReducer,
+//   compose(
+//     applyMiddleware(reduxThunk),
+//     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+//   )
+// );
+const store = createStore(rootReducer, applyMiddleware(reduxThunk));
 
 ReactDOM.render(
   <Provider store={store}>
